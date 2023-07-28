@@ -1,0 +1,42 @@
+{
+    "name": "joaorportal89/active-directory-authenticate",
+    "description": "CakePHP plugin for Active Directory authentication over LDAP.",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "authenticate", "ldap", "ad"],
+    "homepage": "http://github.com/joaorportal89/active-directory-authenticate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "João Rafael",
+            "homepage": "https://portal89.com.br",
+            "role": "Author"
+        },
+        {
+            "name": "João Rafael",
+            "homepage": "https://portal89.com.br",
+            "role": "Developer, bug eliminator"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "cakephp/cakephp": "4.4.*",
+        "adldap2/adldap2": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.5.0 || ^9.3"
+    },
+    "support": {
+        "issues": "http://github.com/joaorportal89/active-directory-authenticate/issues",
+        "source": "http://github.com/joaorportal89/active-directory-authenticate"
+    },
+    "autoload": {
+        "psr-4": {
+            "ActiveDirectoryAuthenticate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ActiveDirectoryAuthenticate\\Test\\": "tests"
+        }
+    }
+}
