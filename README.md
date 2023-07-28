@@ -7,7 +7,7 @@ Extends CakePHP's built-in authentication types to offer form authentication for
 Install Active Directory Authentication by CLI:
 
 ```
-composer require joaorportal89/active-directory-authenticate:1.0.x-dev
+composer require Portal89/cakephp-ad-auth
 ```
 
 Install Active Directory Authentication by adding the following to your `composer.json` file:
