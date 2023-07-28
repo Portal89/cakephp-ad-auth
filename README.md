@@ -1,4 +1,4 @@
-# Active Directory Authentication for [CakePHP 4](https://cakephp.org/)
+# Active Directory Authentication for [CakePHP 4.4](https://cakephp.org/)
 
 Extends CakePHP's built-in authentication types to offer form authentication for Active Directory users over LDAP using [Adldap2](https://github.com/Adldap2/Adldap2/).
 
@@ -13,18 +13,24 @@ composer require joaorportal89/active-directory-authenticate:1.0.x-dev
 Install Active Directory Authentication by adding the following to your `composer.json` file:
 
     "require": {
-        "joaorportal89/active-directory-authenticate": "1.0.x-dev"
+        "Portal89/cakephp-ad-auth"
     }
 
 Run composer's update command to download the plugin.
 
 ## Loading Into A CakePHP Application
 
-After installing with Composer, load the plugin:
+After installing with Composer, load the plugin manual:
 
 ```php
-// add to config/bootstrap.php
+// add to src\Application.php
 Plugin::load('ActiveDirectoryAuthenticate');
+```
+
+After installing with Composer, load the plugin CLI:
+
+```php
+bin/cake plugin load ActiveDirectoryAuthenticate
 ```
 
 ## Adding Active Directory Authentication
