@@ -1,5 +1,5 @@
 {
-    "name": "portal89/cakephp-ad-autj",
+    "name": "portal89/cakephp-ad-auth",
     "description": "CakePHP plugin for Active Directory authentication over LDAP.",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "authenticate", "ldap", "ad"],
