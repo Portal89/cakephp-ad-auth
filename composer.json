@@ -7,22 +7,17 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "João Rafael",
-            "homepage": "https://portal89.com.br",
-            "role": "Author"
-        },
-        {
             "name": "Fábio Mathias",
             "homepage": "https://portal89.com.br",
             "role": "Author"
         },
         {
-            "name": "João Rafael",
+            "name": "Fábio Mathias",
             "homepage": "https://portal89.com.br",
             "role": "Developer, bug eliminator"
-        }
+        },
         {
-            "name": "Fábio Mathias",
+            "name": "João Rafael",
             "homepage": "https://portal89.com.br",
             "role": "Developer, bug eliminator"
         }
