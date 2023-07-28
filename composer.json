@@ -1,9 +1,9 @@
 {
-    "name": "joaorportal89/active-directory-authenticate",
+    "name": "portal89/cakephp-ad-autj",
     "description": "CakePHP plugin for Active Directory authentication over LDAP.",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "authenticate", "ldap", "ad"],
-    "homepage": "http://github.com/joaorportal89/active-directory-authenticate",
+    "homepage": "http://github.com/Portal89/cakephp-ad-auth",
     "license": "MIT",
     "authors": [
         {
@@ -26,8 +26,8 @@
         "phpunit/phpunit": "~8.5.0 || ^9.3"
     },
     "support": {
-        "issues": "http://github.com/joaorportal89/active-directory-authenticate/issues",
-        "source": "http://github.com/joaorportal89/active-directory-authenticate"
+        "issues": "http://github.com/Portal89/cakephp-ad-auth/issues",
+        "source": "http://github.com/Portal89/cakephp-ad-auth"
     },
     "autoload": {
         "psr-4": {
