@@ -9,12 +9,7 @@
         {
             "name": "Fábio Mathias",
             "homepage": "https://portal89.com.br",
-            "role": "Author"
-        },
-        {
-            "name": "Fábio Mathias",
-            "homepage": "https://portal89.com.br",
-            "role": "Developer, bug eliminator"
+            "role": "Author, developer, bug eliminator"
         },
         {
             "name": "João Rafael",
@@ -25,7 +20,7 @@
     "require": {
         "php": ">=7.4",
         "cakephp/cakephp": "4.4.*",
-        "adldap2/adldap2": "v4.0.5"
+        "adldap2/adldap2": "v10.5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.5.0 || ^9.3"
