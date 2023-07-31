@@ -4,8 +4,8 @@ namespace ActiveDirectoryAuthenticate\Auth;
 use Adldap\Adldap;
 use Cake\Auth\FormAuthenticate;
 use Cake\Controller\ComponentRegistry;
-use Cake\Network\Request;
-use Cake\Network\Response;
+use Cake\Http\ServerRequest;
+use Cake\Http\Response;
 
 class AdldapAuthenticate extends FormAuthenticate
 {
@@ -90,7 +90,7 @@ class AdldapAuthenticate extends FormAuthenticate
      * @param \Cake\Network\Response $response Unused response object.
      * @return mixed False on login failure. An array of User data on success.
      */
-    public function authenticate(Request $request, Response $response)
+    public function authenticate(ServerRequest $request, Response $response)
     {
         $fields = $this->_config['fields'];
         if (!$this->_checkFields($request, $fields)) {
