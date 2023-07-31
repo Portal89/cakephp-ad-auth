@@ -72,17 +72,17 @@ class AdldapAuthenticate extends FormAuthenticate
     /**
      * Authenticate user
      *
-     * @param \Cake\Network\Request $request The request that contains login information.
-     * @param \Cake\Network\Response $response Unused response object.
+     * @param \Cake\Http\ServerRequest $request The request that contains login information.
+     * @param \Cake\Http\Response $response Unused response object.
      * @return mixed False on login failure. An array of User data on success.
      */
     public function authenticate(ServerRequest $request, Response $response)
     {
-        $fields = $this->_config['fields'];
-        if (!$this->_checkFields($request, $fields)) {
+        $fields = $request->getdata();
+        if (!is_array($fields) && !isset($fields['username']) && !isset($fields['passwd'])) {
             return false;
         }
-        return $this->findAdUser($request->data[$fields['username']], $request->data[$fields['password']]);
+        return $this->findAdUser($fields['username'], $fields['passwd']);
     }
 
     /**
