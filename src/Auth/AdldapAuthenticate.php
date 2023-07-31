@@ -9,6 +9,7 @@ use Cake\Http\Response;
 
 class AdldapAuthenticate extends FormAuthenticate
 {
+    public $_config = [];
     /**
      * Constructor
      *
@@ -22,9 +23,10 @@ class AdldapAuthenticate extends FormAuthenticate
      */
     public function __construct(ComponentRegistry $registry, $config)
     {
+        $this->_config = $config['config'];
         $this->registry = $registry;
         $this->ad = new \Adldap\Adldap();
-        $this->ad->addProvider($config['config']);
+        $this->ad->addProvider($this->_config);
     }
 
     /**
