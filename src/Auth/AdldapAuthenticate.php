@@ -23,22 +23,8 @@ class AdldapAuthenticate extends FormAuthenticate
     public function __construct(ComponentRegistry $registry, $config)
     {
         $this->registry = $registry;
-
-        $this->config([
-            'config' => [],
-            'ignored' => [
-                'distinguishedname',
-                'dn',
-                'objectcategory',
-                'objectclass'
-            ],
-            'select' => null
-        ]);
-        $this->config($config, null, false);
-
-        $this->ad = new Adldap();
-        $this->provider = new \Adldap\Connections\Provider($this->_config['config']);
-        $this->ad->addProvider('default', $this->provider);
+        $this->ad = new \Adldap\Adldap();
+        $this->ad->addProvider($config['config']);
     }
 
     /**
